@@ -65,18 +65,22 @@ def run(songs)
     
     if input == "help"
       help
+      prompt_user
     end
 
     if input == "play"
       play(songs)
+      prompt_user
     end
     
     if input == "list"
       list(songs)
+      prompt_user
     end
     
     if input == "help"
       help
+      prompt_user
     end
   end
 end
