@@ -60,8 +60,6 @@ end
 def run(songs) 
   prompt_user
   input = gets.strip
-  
-  while input != "exit" do 
     
     if input == "help"
       help
@@ -82,7 +80,10 @@ def run(songs)
       help
       prompt_user
     end
-  end
+    
+    if input == "exit"
+      exit_jukebox
+    end
 end
     
   
